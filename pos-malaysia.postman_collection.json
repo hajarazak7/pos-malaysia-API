@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "b580d356-97c8-4c9f-aacc-3f8e5da687a9",
+		"name": "pos-malaysia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8860654"
+	},
+	"item": [
+		{
+			"name": "county-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "www-api.pos.com.my"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.pos.com.my"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.pos.com.my/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					}
+				],
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/countries",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"countries"
+					]
+				},
+				"description": "Generated from cURL: curl -H \"Host: www-api.pos.com.my\" -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0\" -H \"Accept: application/json, text/plain, */*\" -H \"Accept-Language: en-US,en;q=0.5\" -H \"Origin: https://www.pos.com.my\" -H \"Referer: https://www.pos.com.my/\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-site\" --compressed \"https://www-api.pos.com.my/api/countries\""
+			},
+			"response": []
+		},
+		{
+			"name": "getStateByPostcode- from",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "www-api.pos.com.my"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.pos.com.my"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.pos.com.my/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"postCode\":\"12300\"}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/getStateByPostcode",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"getStateByPostcode"
+					]
+				},
+				"description": "Generated from cURL: curl -H \"Host: www-api.pos.com.my\" -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0\" -H \"Accept: application/json, text/plain, */*\" -H \"Accept-Language: en-US,en;q=0.5\" -H \"Content-Type: application/json\" -H \"Origin: https://www.pos.com.my\" -H \"Referer: https://www.pos.com.my/\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-site\" --data-binary \"{\\\"postCode\\\":\\\"12300\\\"}\" --compressed \"https://www-api.pos.com.my/api/getStateByPostcode\""
+			},
+			"response": []
+		},
+		{
+			"name": "getStateByPostcode- to",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "www-api.pos.com.my"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.pos.com.my"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.pos.com.my/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"postCode\":\"13000\"}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/getStateByPostcode",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"getStateByPostcode"
+					]
+				},
+				"description": "Generated from cURL: curl -H \"Host: www-api.pos.com.my\" -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0\" -H \"Accept: application/json, text/plain, */*\" -H \"Accept-Language: en-US,en;q=0.5\" -H \"Content-Type: application/json\" -H \"Origin: https://www.pos.com.my\" -H \"Referer: https://www.pos.com.my/\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-site\" --data-binary \"{\\\"postCode\\\":\\\"13000\\\"}\" --compressed \"https://www-api.pos.com.my/api/getStateByPostcode\""
+			},
+			"response": []
+		},
+		{
+			"name": "calculates",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "www-api.pos.com.my"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.pos.com.my"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.pos.com.my/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"country\":\"Malaysia\",\"weight\":1,\"postcodeFrom\":12300,\"postcodeTo\":13000}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/price",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				},
+				"description": "Generated from cURL: curl -H \"Host: www-api.pos.com.my\" -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0\" -H \"Accept: application/json, text/plain, */*\" -H \"Accept-Language: en-US,en;q=0.5\" -H \"Content-Type: application/json\" -H \"Origin: https://www.pos.com.my\" -H \"Referer: https://www.pos.com.my/\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-site\" -H \"Priority: u=0\" --data-binary \"{\\\"country\\\":\\\"Malaysia\\\",\\\"weight\\\":1,\\\"postcodeFrom\\\":12300,\\\"postcodeTo\\\":13000}\" --compressed \"https://www-api.pos.com.my/api/price\""
+			},
+			"response": []
+		}
+	]
+}
